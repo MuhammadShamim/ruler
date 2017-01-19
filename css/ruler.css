@@ -1,0 +1,9 @@
+body {
+	-ms-overflow-style: none;
+  	-webkit-app-region:drag;
+}
+img	{
+	width:1200px;
+	height:80px;
+	margin: 0px
+}
