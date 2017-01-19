@@ -12,7 +12,7 @@ function createWindow () {
     resizable: false,
     width:1300,
     show: false,
-    icon: path.join(__dirname, 'images/rulericon.png')
+    icon: path.join(__dirname, 'images/ruler-icon.png')
   })
   mainWindow.loadURL(`file://${__dirname}/index.html`)
   mainWindow.on('closed', function () {
