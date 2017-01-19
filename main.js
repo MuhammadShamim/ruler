@@ -11,6 +11,7 @@ function createWindow () {
     toolbar: false,
     resizable: false,
     width:1300,
+    height: 100,
     show: false,
     icon: path.join(__dirname, 'images/ruler-icon.png')
   })
