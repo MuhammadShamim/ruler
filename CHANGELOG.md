@@ -81,7 +81,7 @@ ruler/
 
 ## Notes for Contributors
 
-- **Author**: Muhammad Akhtar Shamim
+- **Author**: Muhammad Shamim
 - **License**: MIT
 - **Repository**: https://github.com/MuhammadShamim/ruler.git
 - **Node.js Version**: 6.9.4 LTS or higher
