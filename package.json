@@ -1,19 +1,44 @@
 {
   "name": "ruler",
   "version": "0.0.1",
-  "description": "Screen Ruler",
+  "description": "A lightweight, cross-platform desktop application that displays a transparent ruler overlay on your screen for measuring pixels and distances.",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "homepage": "https://github.com/MuhammadShamim/ruler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuhammadShamim/ruler.git"
   },
-  "repository": "ruler",
+  "bugs": {
+    "url": "https://github.com/MuhammadShamim/ruler/issues"
+  },
   "keywords": [
     "desktop ruler",
-    "screen ruler"
+    "screen ruler",
+    "pixel measurement",
+    "measurement tool",
+    "electron",
+    "desktop application",
+    "cross-platform"
   ],
-  "author": "Muhammad Akhtar Shamim",
+  "author": {
+    "name": "Muhammad Akhtar Shamim",
+    "email": "contact@example.com"
+  },
   "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging",
+    "build": "npm run build:mac && npm run build:win && npm run build:linux",
+    "build:mac": "electron-packager . ruler --platform=darwin --arch=x64 --icon=images/ruler-icon.icns --out=dist",
+    "build:win": "electron-packager . ruler --platform=win32 --arch=x64 --icon=images/ruler-icon.ico --out=dist",
+    "build:linux": "electron-packager . ruler --platform=linux --arch=x64 --icon=images/ruler-icon.png --out=dist"
+  },
   "devDependencies": {
-    "electron": "*"
+    "electron": "^latest",
+    "electron-packager": "^latest"
+  },
+  "engines": {
+    "node": ">=6.9.4",
+    "npm": ">=3.0.0"
   }
 }

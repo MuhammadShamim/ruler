@@ -1,9 +1,53 @@
+/**
+ * Ruler - Desktop Screen Measuring Tool
+ * Main Stylesheet
+ * 
+ * Author: Muhammad Shamim
+ * License: MIT
+ * Version: 0.0.1
+ * 
+ * Description:
+ * This CSS file styles the Ruler application window.
+ * It handles the window appearance, draggability, and image layout.
+ */
+
+/**
+ * Body Styles
+ * - Removes scrollbars for clean appearance
+ * - Enables window dragging functionality
+ */
 body {
-	-ms-overflow-style: none;
-  	-webkit-app-region:drag;
+  /* Hide scrollbars in IE and Edge */
+  -ms-overflow-style: none;
+  
+  /* Enable macOS native window dragging
+     This makes the entire window draggable by clicking and dragging */
+  -webkit-app-region: drag;
+  
+  /* Reset default margins */
+  margin: 0;
+  padding: 0;
+  
+  /* Remove background to maintain transparency */
+  background: transparent;
 }
-img	{
-	width:1200px;
-	height:80px;
-	margin: 0px
+
+/**
+ * Image Styles
+ * Displays and positions the ruler image overlay
+ */
+img {
+  /* Ruler image dimensions (1200px wide x 80px tall) */
+  width: 1200px;
+  height: 80px;
+  
+  /* Remove spacing around image */
+  margin: 0;
+  padding: 0;
+  
+  /* Ensure crisp rendering at exact pixel dimensions */
+  display: block;
+  
+  /* Allow image to be part of draggable region */
+  -webkit-app-region: drag;
 }
